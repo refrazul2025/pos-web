@@ -1,0 +1,129 @@
+/* Default Variables (Hello Kitty) or Base */
+:root {
+  --bs-primary: #ff69b4;
+  /* Hot Pink */
+  --bs-secondary: #ffb6c1;
+  /* Light Pink */
+  --bs-body-bg: #fff0f5;
+  /* Lavender Blush */
+  --bs-body-color: #d147a3;
+  --bs-card-bg: #ffffff;
+  --bs-btn-color: #ffffff;
+}
+
+/* Global Font Application */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hello Kitty Theme */
+.theme-hello-kitty {
+  --bs-primary: #ff69b4;
+  --bs-secondary: #ffb6c1;
+  --bs-success: #98fb98;
+  --bs-info: #87ceeb;
+  --bs-warning: #ffd700;
+  --bs-danger: #ff6347;
+  --bs-body-bg: #fff0f5;
+  --bs-body-color: #880e4f;
+  --bs-card-bg: #ffe4e1;
+  /* Misty Rose */
+
+  /* Header overrides */
+  --bs-header-bg: var(--bs-primary);
+  --bs-header-color: #ffffff;
+
+  /* Dropdown overrides */
+  --bs-dropdown-link-active-bg: var(--bs-primary);
+  --bs-dropdown-link-active-color: #ffffff;
+}
+
+.theme-hello-kitty .btn-primary {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #ff69b4;
+  --bs-btn-border-color: #ff69b4;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #e05e9e;
+  --bs-btn-hover-border-color: #e05e9e;
+  --bs-btn-focus-shadow-rgb: 255, 105, 180;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #e05e9e;
+  --bs-btn-active-border-color: #e05e9e;
+}
+
+/* Attack on Titan Theme (Survey Corps) */
+.theme-aot {
+  --bs-primary: #154734;
+  /* Dark Green (Cloak) */
+  --bs-secondary: #8d7557;
+  /* Light Brown (Jacket) */
+  --bs-success: #556b2f;
+  /* Olive Drab */
+  --bs-info: #708090;
+  /* Slate Gray */
+  --bs-warning: #daa520;
+  /* Goldenrod */
+  --bs-danger: #8b0000;
+  /* Dark Red */
+  --bs-body-bg: #f5f5dc;
+  /* Beige */
+  --bs-body-color: #2f4f4f;
+  /* Dark Slate Gray */
+  --bs-card-bg: #eaddcf;
+  /* Header overrides */
+  --bs-header-bg: #0f3526;
+  /* Deep green */
+  --bs-header-color: #ffffff;
+
+  /* Dropdown overrides */
+  --bs-dropdown-link-active-bg: var(--bs-primary);
+  --bs-dropdown-link-active-color: #ffffff;
+}
+
+.theme-aot .btn-primary {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #154734;
+  --bs-btn-border-color: #154734;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #0f3526;
+  --bs-btn-hover-border-color: #0f3526;
+  --bs-btn-focus-shadow-rgb: 21, 71, 52;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #0f3526;
+  --bs-btn-active-border-color: #0f3526;
+}
+
+/* Dark Theme */
+.theme-dark {
+  --bs-primary: #bb86fc;
+  --bs-secondary: #03dac6;
+  --bs-success: #03dac6;
+  --bs-info: #3700b3;
+  --bs-warning: #cf6679;
+  --bs-danger: #cf6679;
+  --bs-body-bg: #121212;
+  --bs-body-color: #e0e0e0;
+  --bs-card-bg: #1e1e1e;
+  --bs-border-color: #333;
+  /* Header overrides */
+  --bs-header-bg: #1e1e1e;
+  /* Darker than body */
+  --bs-header-color: #bb86fc;
+
+  /* Dropdown overrides */
+  --bs-dropdown-link-active-bg: var(--bs-primary);
+  --bs-dropdown-link-active-color: #000000;
+}
+
+.theme-dark .btn-primary {
+  --bs-btn-color: #000000;
+  --bs-btn-bg: #bb86fc;
+  --bs-btn-border-color: #bb86fc;
+  --bs-btn-hover-color: #000000;
+  --bs-btn-hover-bg: #9965f4;
+  --bs-btn-hover-border-color: #9965f4;
+  --bs-btn-focus-shadow-rgb: 187, 134, 252;
+  --bs-btn-active-color: #000000;
+  --bs-btn-active-bg: #9965f4;
+  --bs-btn-active-border-color: #9965f4;
+}
