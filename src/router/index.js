@@ -5,7 +5,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/login'
+      redirect: '/venta'
     },
     {
       path: '/login',
@@ -13,9 +13,14 @@ const router = createRouter({
       component: () => import('../views/LoginView.vue')
     },
     {
+      path: '/venta',
+      name: 'venta',
+      component: () => import('../views/VentaView.vue')
+    },
+    {
       path: '/principal',
       name: 'principal',
-      component: () => import('../views/LoginView.vue') // Placeholder until MainView is created
+      redirect: '/venta'
     }
   ],
 })

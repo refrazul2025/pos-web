@@ -98,7 +98,8 @@ body {
   --bs-primary: #bb86fc;
   --bs-secondary: #03dac6;
   --bs-success: #03dac6;
-  --bs-info: #3700b3;
+  --bs-info: #80d8ff;
+  /* Light Blue for visibility */
   --bs-warning: #cf6679;
   --bs-danger: #cf6679;
   --bs-body-bg: #121212;
@@ -113,6 +114,64 @@ body {
   /* Dropdown overrides */
   --bs-dropdown-link-active-bg: var(--bs-primary);
   --bs-dropdown-link-active-color: #000000;
+
+  /* Table overrides for Dark Mode */
+  --bs-table-color: var(--bs-body-color);
+  --bs-table-bg: transparent;
+  --bs-table-striped-color: var(--bs-body-color);
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.05);
+  --bs-table-hover-color: var(--bs-body-color);
+  --bs-table-hover-bg: rgba(255, 255, 255, 0.075);
+  --bs-table-active-bg: rgba(255, 255, 255, 0.1);
+
+  --bs-heading-color: #ffffff;
+  --bs-card-color: var(--bs-body-color);
+  --bs-card-cap-bg: rgba(255, 255, 255, 0.05);
+
+  /* Input overrides for Dark Mode */
+  --bs-body-bg-rgb: 18, 18, 18;
+
+  /* Force dark inputs */
+  .form-control,
+  .form-select {
+    background-color: #2b2b2b;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    background-color: #333;
+    border-color: var(--bs-primary);
+    color: #ffffff;
+  }
+
+  .form-control::placeholder {
+    color: #888;
+  }
+
+  /* Floating labels adjustments */
+  .form-floating>label {
+    color: #aaa;
+  }
+
+  .form-floating>.form-control:focus~label,
+  .form-floating>.form-control:not(:placeholder-shown)~label {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  /* Input-group text */
+  .input-group-text {
+    background-color: #2b2b2b;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  /* Modal overrides just in case */
+  --bs-modal-bg: #1e1e1e;
+  --bs-modal-color: #e0e0e0;
+  --bs-modal-header-border-color: #333;
+  --bs-modal-footer-border-color: #333;
 }
 
 .theme-dark .btn-primary {
@@ -126,4 +185,43 @@ body {
   --bs-btn-active-color: #000000;
   --bs-btn-active-bg: #9965f4;
   --bs-btn-active-border-color: #9965f4;
+}
+
+/* Helper to force text color if needed */
+.theme-dark .text-muted {
+  color: #a0a0a0 !important;
+}
+
+.theme-dark .text-secondary {
+  color: #a0a0a0 !important;
+}
+
+/* Aggressive Table Overrides for Dark Mode */
+.theme-dark .table {
+  color: var(--bs-body-color) !important;
+  background-color: transparent !important;
+}
+
+.theme-dark .table> :not(caption)>*>* {
+  background-color: transparent !important;
+  color: var(--bs-body-color) !important;
+  box-shadow: none !important;
+}
+
+/* Fix Striped Rows */
+.theme-dark .table-striped>tbody>tr:nth-of-type(odd)>* {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: var(--bs-body-color) !important;
+}
+
+/* Fix Hover Rows */
+.theme-dark .table-hover>tbody>tr:hover>* {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+/* Ensure headings are visible */
+.theme-dark .table thead th {
+  color: #ffffff !important;
+  background-color: var(--bs-body-bg) !important;
 }
