@@ -18,6 +18,11 @@ const router = createRouter({
       component: () => import('../views/VentaView.vue')
     },
     {
+      path: '/agregar-producto',
+      name: 'agregar-producto',
+      component: () => import('../views/AgregarProductoView.vue')
+    },
+    {
       path: '/principal',
       name: 'principal',
       redirect: '/venta'
